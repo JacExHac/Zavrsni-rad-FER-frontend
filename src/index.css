@@ -1,0 +1,585 @@
+body {
+  margin: 0;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  background-color: #EEEEEE;
+}
+
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  max-width: 600 px;
+  margin: 0 auto;
+  background-color: lightsteelblue;
+}
+
+.navbar h1 {
+  color: firebrick;
+}
+
+.navbar .nav-links {
+  margin-left: auto;
+}
+
+.navbar button {
+  margin-left: 16px;
+  padding: 10px;
+  text-decoration: none;
+  border: none;
+  background-color: lightsteelblue;
+  font-size: 17px;
+  color: purple;
+  font-weight: bold;
+  text-decoration: none;
+  
+}
+
+.navbar button:hover {
+  color: dimgray;
+  cursor: pointer;
+}
+
+
+.navbar a {
+  margin-left: 16px;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+  color: purple;
+  
+}
+
+.navbar a:hover {
+  color: dimgray;
+}
+
+/* navbar done */
+
+/*start login*/
+
+.login-form {
+  width: 350px;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+
+}
+
+.login-form h2 {
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.error-during-login {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0px 0px 5px 15px;
+  text-align: center;
+
+}
+
+.login-form input {
+  font-size: 16px;
+  width: 100%;
+  padding: 15px 10px;
+  outline: none;
+  border-radius: 5px;
+}
+
+.login-form input:focus::placeholder {
+  color: transparent;
+}
+
+.login-form select {
+  background-color: lightgray;
+  min-width: 15px;
+  min-height: 5px;
+  display: block;
+  margin: auto;
+
+}
+
+.authtype-radio p {
+  font-size: 1.2em;
+  text-align: center;
+}
+
+.login-form button {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 30px auto; 
+  display: block;
+  padding: 10px 15px;
+  width: 50%;
+}
+
+
+/* end login*/
+
+
+.content {
+  max-width: 600 px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+
+.notification {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 18px;
+  background-color: aliceblue;
+  overflow-wrap: break-word;
+}
+
+.notification h2 {
+  color: lightslategray;
+}
+
+.notification-title {
+  font-size: 2em;
+}
+
+
+.person {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 18px;
+  background-color: aliceblue;
+  overflow-wrap: break-word;
+}
+
+.person h2 {
+  color: lightslategray;
+}
+
+.person a {
+  font-size: 1.1em;
+  font-weight: bolder;
+  text-decoration: none;
+  color: purple;
+}
+
+.person a:hover {
+  color: lightgray;
+}
+
+
+.deletePerson {
+  background-color: rgb(155, 230, 235);
+  color: #000;
+  border: none;
+}
+
+.deletePerson:hover {
+  background-color: red;
+}
+
+
+.invitation {
+  max-width: 1000px;
+  margin: 20px auto;
+  padding: 18px;
+  background-color: aliceblue;
+  overflow-wrap: break-word;
+}
+
+.invitation h2 {
+  color: lightslategray;
+}
+
+.invitation button {
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  text-align: center;
+  background-color: lightsteelblue;
+  border-radius: 4px;
+}
+
+.invitation-excused:hover {
+  cursor: pointer;
+  background-color: rgb(227, 120, 120);
+}
+
+.invitation-confirm:hover {
+  cursor: pointer;
+  background-color: rgb(112, 209, 112);
+}
+
+
+
+/*STUDENT STYLES */
+
+.welcome-msg {
+  margin: auto;
+  text-align: center;
+  padding: 3px;
+
+  border-style: solid;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: 5px;
+}
+
+.welcome-msg h2 {
+  font-size: 2.4em;
+}
+
+.welcome-msg p {
+  font-size: 1.4em;
+  color: rgb(23, 20, 20);
+}
+
+.welcome-msg a {
+  font-size: 1em;
+  font-weight: bolder;
+  text-decoration: none;
+  color: purple;
+}
+
+.welcome-msg a:hover {
+  color: lightgray;
+}
+
+.move-to-adding-form a {
+  font-size: 1em;
+  font-weight: bolder;
+  text-decoration: none;
+  color: purple;
+}
+
+.move-to-adding-form a:hover {
+  color: lightgray;
+}
+
+
+
+
+/* MY DATA (STUDENT) STYLING */
+.my-data {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 50% 50%;
+  grid-column-gap: 2em;
+}
+
+.my-data h2 {
+  display: inline;
+  text-align: center;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  font-size: 2em;
+  
+}
+
+.my-personal-data {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  justify-self: left;
+  align-self: left;
+  padding-left: 20px;
+}
+
+.my-personal-data h2 {
+  font-size: 2em;
+}
+
+.my-personal-data p {
+  font-size: 1.3em;
+}
+
+.my-personal-data span {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+.poster-data {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  justify-self: left;
+  align-self: left;
+  overflow-wrap: break-word;
+  width: 700px;
+}
+
+.poster-data h2 {
+  font-size: 2em;
+}
+
+.poster-data p {
+  font-size: 1.3em;
+}
+
+.poster-data a {
+  font-size: 1em;
+  font-weight: bolder;
+  text-decoration: none;
+  color: purple;
+}
+
+.poster-data a:hover {
+  color: lightgray;
+}
+.poster-data span {
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+/* MY DATA (STUDENT) STYLING OVER*/
+
+/* STUDENTPOSTERREQUEST (STUDENT) STYLING */
+
+.poster-data-detailed-info {
+  overflow-wrap: break-word;
+
+}
+
+.manager-edited > a{
+  font-size: 300px;
+}
+
+.manager-comment-area {
+  display: inline-block;
+  overflow-wrap: break-word ;
+  border: 2px solid lightgray;
+  
+}
+
+
+.manager-edited p {
+  display: inline-block;
+  font-size: 1.4em;
+
+}
+
+
+/* STUDENTPOSTERREQUEST (STUDENT) STYLING OVER*/
+
+/* CREATE POSTER (STUDENT) STYLING */
+.create-poster h2 {
+  font-size: 2em;
+}
+
+.poster-create-text {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+}
+
+.create-poster input {
+  display: block;
+  border-radius: 8px;
+  border-color: lightgray;
+  min-width: 500px;
+  max-width: 1000px;
+}
+
+.create-poster button {
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  text-align: center;
+  background-color: lightsteelblue;
+  border-radius: 4px;
+}
+
+.create-poster input:focus::placeholder {
+  color: transparent;
+}
+/* CREATE POSTER (STUDENT) STYLING OVER*/
+
+/*VIEW POSTER (STUDENT) STYLING*/
+
+.poster-status-dependent-p {
+  font-size: 2em;
+  text-align: center;
+}
+
+.poster-status-dependent-p-link {
+  font-size: 1.6em;
+  text-align: center;
+}
+
+.poster-data-detailed-info a {
+  font-size: 1em;
+  font-weight: bolder;
+  text-decoration: none;
+  color: purple;
+}
+
+.poster-data-detailed-info a:hover {
+  color: lightgray;
+}
+
+.poster-request textarea {
+  display: block;
+  border-radius: 8px;
+  border-color: lightgray;
+  min-width: 570px;
+  min-height: 74px;
+  resize: none;
+}
+
+.poster-request button {
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  text-align: center;
+  background-color: lightsteelblue;
+  border-radius: 4px;
+}
+
+.poster-request button:hover {
+  cursor: pointer;
+  background-color: lightblue;
+}
+
+/*VIEW POSTER (STUDENT) STYLING OVER*/
+
+.resend-poster-request textarea {
+  display: block;
+  border-radius: 8px;
+  border-color: lightgray;
+  min-width: 570px;
+  min-height: 74px;
+  resize: none;
+}
+
+.resend-poster-request button {
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  text-align: center;
+  background-color: lightsteelblue;
+  border-radius: 4px;
+}
+
+
+
+
+
+/*ADD NOTIFICATION STU SLU*/
+
+.notification-add textarea {
+  display: block;
+  border-radius: 8px;
+  border-color: lightgray;
+  min-width: 570px;
+  min-height: 74px;
+  resize: none;
+}
+
+.notification-add button {
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  text-align: center;
+  background-color: lightsteelblue;
+  border-radius: 4px;
+}
+
+a[href*="stuslu/addnotification"] {
+  font-size: 2em;
+  font-weight: bolder;
+  color: purple;
+  display: block;
+  text-align: center;
+}
+
+a[href*="stuslu/addnotification"]:hover {
+  color: lightgray;
+}
+
+.status-indicators {
+  font-size: 1.5em;
+  text-align: center;
+  border-style: solid;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  border-bottom-style: 5px;
+}
+
+.my-inviations-description {
+  font-size: 2em;
+  text-align: center;
+}
+
+.invitation-request textarea {
+  display: block;
+  border-radius: 8px;
+  border-color: lightgray;
+  min-width: 570px;
+  min-height: 74px;
+  resize: none;
+}
+
+.radio-div-student-response {
+  margin-top: 5px;
+  padding: 5px 5px 5px 0px;
+}
+
+.radio-div-student-response select {
+  background-color: lightgray;
+  min-width: 15px;
+  min-height: 5px;
+}
+
+.invitation-request button {
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  text-align: center;
+  background-color: lightsteelblue;
+  border-radius: 4px;
+}
+
+.invitation-request button:hover {
+  color: dimgray;
+  cursor: pointer;
+}
+/*ADD NOTIFICATION STU SLU OVER*/
+
+/* EXH MANAGER STYLES*/
+
+.exh-poster-request {
+  display: absolute;
+  font-size: 20px;
+}
+
+.exh-poster-request textarea {
+  display: block;
+  border-radius: 8px;
+  border-color: lightgray;
+  min-width: 570px;
+  min-height: 74px;
+  resize: none;
+}
+
+.exh-poster-request button {
+  display: inline-block;
+  margin: 10px 0 0 10px;
+  text-align: center;
+  background-color: lightsteelblue;
+  border-radius: 4px;
+}
+
+  .jmbag-exh-manager-view {
+    font-size: 2em;
+    text-align: center;
+  }
+
+  .exh-decline:hover {
+    cursor: pointer;
+    background-color: rgb(227, 120, 120);
+  }
+
+  .exh-accept:hover {
+    cursor: pointer;
+    background-color: rgb(112, 209, 112);
+  }
+
+  .exh-alter:hover {
+    cursor: pointer;
+    background-color: rgb(171, 171, 44);
+  }
+  
+/* EXH MANAGER STYLES OVER*/
